@@ -1,0 +1,27 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={title} />
+  </head>
+  <body>
+    <nav class= flex gap-5>
+      <a href="/">Home</a>
+      <a href="/blog">Blog</a>
+      <a href="/projects">Projects</a>
+    </nav>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <p>© 2026 Your Name</p>
+    </footer>
+  </body>
+</html>
