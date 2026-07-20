@@ -1,1 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&family=Inter:wght@400;700&family=Playfair+Display&family=Italianno&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --font-climate: "Climate Crisis", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-playfair: "Playfair Display", serif;
+  --font-italianno: "Italianno", cursive;
+}
