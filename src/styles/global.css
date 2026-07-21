@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&family=Inter:wght@400;700&family=Playfair+Display&family=Italianno&display=swap");
 @import "tailwindcss";
+@plugin "daisyui";
 
 @theme {
   --font-climate: "Climate Crisis", sans-serif;
