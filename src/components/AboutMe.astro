@@ -1,13 +1,12 @@
 ---
 import '../styles/global.css'
+import HeroBackground from './HeroBackground.astro'
 ---
 
 <div>
   <section class="mt-10">
     <div class="relative w-full h-screen">
-
-      <div class="absolute inset-0 opacity-40 grid-bg"></div>
-
+      <HeroBackground />
       <div class="absolute inset-0 flex items-center px-6 sm:px-10 md:ml-20 z-10">
         <div class="aura aura-silver w-full max-w-sm sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
           <div class="card bg-white text-gray-900 rounded-lg w-full p-4 sm:p-6 md:p-8 lg:p-10 shadow-lg">
@@ -27,11 +26,3 @@ import '../styles/global.css'
   </section>
 </div>
 
-<style>
-  .grid-bg {
-    --cell-size: clamp(20px, 4vw, 40px);
-    background-image:
-      repeating-linear-gradient(to right, black 0 1px, transparent 1px var(--cell-size)),
-      repeating-linear-gradient(to bottom, black 0 1px, transparent 1px var(--cell-size));
-  }
-</style>
