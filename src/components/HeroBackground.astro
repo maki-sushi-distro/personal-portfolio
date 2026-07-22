@@ -1,0 +1,14 @@
+---
+import '../styles/global.css'
+---
+
+<div class="absolute inset-0 opacity-40 grid-bg"></div>
+
+<style>
+  .grid-bg {
+    --cell-size: clamp(20px, 4vw, 40px);
+    background-image:
+      repeating-linear-gradient(to right, black 0 1px, transparent 1px var(--cell-size)),
+      repeating-linear-gradient(to bottom, black 0 1px, transparent 1px var(--cell-size));
+  }
+</style>
